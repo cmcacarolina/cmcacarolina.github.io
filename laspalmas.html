@@ -1,58 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Las Palmas | Real-Time Tropical House Listings</title>
+  <title>Las Palmas | Book Coastal Homes</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f0f9f6;
+      background-color: #f5fdfb;
       margin: 0;
       padding: 0;
-      color: #2e4d4d;
+      color: #2d4747;
     }
 
     header {
       background-color: #1c6b5c;
       color: white;
-      padding: 30px;
+      padding: 40px 20px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 42px;
+      font-size: 40px;
     }
 
     .tagline {
       font-size: 18px;
-      margin-top: 10px;
+      margin-top: 8px;
     }
 
-    section {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       padding: 40px 20px;
       max-width: 1200px;
       margin: auto;
+      gap: 30px;
     }
 
-    h2 {
-      font-size: 26px;
-      color: #228b7f;
-      margin: 40px 0 15px;
-    }
-
-    iframe {
-      width: 100%;
-      height: 800px;
-      border: none;
+    .card {
+      background-color: white;
       border-radius: 10px;
-      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-      margin-bottom: 60px;
+      width: 300px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px 0 5px;
+    }
+
+    .card p {
+      padding: 0 15px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 15px;
+      padding: 10px 20px;
+      background-color: #1c6b5c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #155448;
     }
 
     footer {
       text-align: center;
+      background-color: #e0f6f0;
       padding: 20px;
-      background-color: #e2f2ed;
       font-size: 14px;
     }
   </style>
@@ -61,61 +92,85 @@
 
   <header>
     <h1>Las Palmas 🏝️</h1>
-    <div class="tagline">Live tropical house listings in Puerto Rico, Florida, and California</div>
+    <div class="tagline">Browse dream homes in Puerto Rico, Florida & California</div>
   </header>
 
-  <section>
+  <div class="container">
+    <!-- PUERTO RICO -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606787366850-de6330128bfc" alt="San Juan">
+      <h3>San Juan, PR</h3>
+      <p>Historic charm meets beachfront beauty.</p>
+      <a href="https://www.airbnb.com/s/San-Juan--Puerto-Rico/homes?refinement_paths%5B%5D=%2Fhomes" class="btn" target="_blank">View Listings</a>
+    </div>
 
-    <!-- Puerto Rico -->
-    <h2>San Juan, Puerto Rico 🇵🇷</h2>
-    <iframe src="https://www.airbnb.com/s/San-Juan--Puerto-Rico/homes?refinement_paths%5B%5D=%2Fhomes" loading="lazy"></iframe>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1599337733256-1622b60a889e" alt="Dorado">
+      <h3>Dorado, PR</h3>
+      <p>Luxury retreats with pools and sunsets.</p>
+      <a href="https://www.airbnb.com/s/Dorado--Puerto-Rico/homes?refinement_paths%5B%5D=%2Fhomes" class="btn" target="_blank">View Listings</a>
+    </div>
 
-    <h2>Carolina, Puerto Rico 🇵🇷</h2>
-    <iframe src="https://www.airbnb.com/s/Carolina--Puerto-Rico/homes?refinement_paths%5B%5D=%2Fhomes" loading="lazy"></iframe>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1613991913651-6f693d2351e9" alt="Carolina">
+      <h3>Carolina, PR</h3>
+      <p>Beach homes 10 minutes from the airport.</p>
+      <a href="https://www.airbnb.com/s/Carolina--Puerto-Rico/homes?refinement_paths%5B%5D=%2Fhomes" class="btn" target="_blank">View Listings</a>
+    </div>
 
-    <h2>Dorado, Puerto Rico 🇵🇷</h2>
-    <iframe src="https://www.airbnb.com/s/Dorado--Puerto-Rico/homes?refinement_paths%5B%5D=%2Fhomes" loading="lazy"></iframe>
+    <!-- FLORIDA -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1586985289688-91189b727c0f" alt="Miami">
+      <h3>Miami, FL</h3>
+      <p>Modern homes near South Beach & nightlife.</p>
+      <a href="https://www.airbnb.com/s/Miami--FL--United-States/homes?refinement_paths%5B%5D=%2Fhomes" class="btn" target="_blank">View Listings</a>
+    </div>
 
-    <h2>Fajardo, Puerto Rico 🇵🇷</h2>
-    <iframe src="https://www.airbnb.com/s/Fajardo--Puerto-Rico/homes?refinement_paths%5B%5D=%2Fhomes" loading="lazy"></iframe>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1551907234-6c0317c79c1c" alt="Orlando">
+      <h3>Orlando, FL</h3>
+      <p>Perfect family homes near Disney World.</p>
+      <a href="https://www.airbnb.com/s/Orlando--FL--United-States/homes?refinement_paths%5B%5D=%2Fhomes" class="btn" target="_blank">View Listings</a>
+    </div>
 
-    <h2>Río Grande, Puerto Rico 🇵🇷</h2>
-    <iframe src="https://www.airbnb.com/s/Rio-Grande--Puerto-Rico/homes?refinement_paths%5B%5D=%2Fhomes" loading="lazy"></iframe>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1623521787449-2b47011f0b04" alt="Tampa">
+      <h3>Tampa, FL</h3>
+      <p>Quiet homes with palm trees and patio vibes.</p>
+      <a href="https://www.airbnb.com/s/Tampa--FL--United-States/homes?refinement_paths%5B%5D=%2Fhomes" class="btn" target="_blank">View Listings</a>
+    </div>
 
-    <!-- Florida -->
-    <h2>Miami, Florida 🌴</h2>
-    <iframe src="https://www.airbnb.com/s/Miami--FL--United-States/homes?refinement_paths%5B%5D=%2Fhomes" loading="lazy"></iframe>
+    <!-- CALIFORNIA -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1600573471623-61c9dd7caa2c" alt="San Diego">
+      <h3>San Diego, CA</h3>
+      <p>Beach bungalows and surf-friendly retreats.</p>
+      <a href="https://www.airbnb.com/s/San-Diego--CA--United-States/homes?refinement_paths%5B%5D=%2Fhomes" class="btn" target="_blank">View Listings</a>
+    </div>
 
-    <h2>Orlando, Florida 🌴</h2>
-    <iframe src="https://www.airbnb.com/s/Orlando--FL--United-States/homes?refinement_paths%5B%5D=%2Fhomes" loading="lazy"></iframe>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581547845309-fd1bc25f91dc" alt="Los Angeles">
+      <h3>Los Angeles, CA</h3>
+      <p>Modern homes near Hollywood & the coast.</p>
+      <a href="https://www.airbnb.com/s/Los-Angeles--CA--United-States/homes?refinement_paths%5B%5D=%2Fhomes" class="btn" target="_blank">View Listings</a>
+    </div>
 
-    <h2>Tampa, Florida 🌴</h2>
-    <iframe src="https://www.airbnb.com/s/Tampa--FL--United-States/homes?refinement_paths%5B%5D=%2Fhomes" loading="lazy"></iframe>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="San Francisco">
+      <h3>San Francisco, CA</h3>
+      <p>Stylish stays with iconic views and charm.</p>
+      <a href="https://www.airbnb.com/s/San-Francisco--CA--United-States/homes?refinement_paths%5B%5D=%2Fhomes" class="btn" target="_blank">View Listings</a>
+    </div>
 
-    <h2>Sarasota, Florida 🌴</h2>
-    <iframe src="https://www.airbnb.com/s/Sarasota--FL--United-States/homes?refinement_paths%5B%5D=%2Fhomes" loading="lazy"></iframe>
-
-    <h2>Naples, Florida 🌴</h2>
-    <iframe src="https://www.airbnb.com/s/Naples--FL--United-States/homes?refinement_paths%5B%5D=%2Fhomes" loading="lazy"></iframe>
-
-    <!-- California -->
-    <h2>San Diego, California 🌊</h2>
-    <iframe src="https://www.airbnb.com/s/San-Diego--CA--United-States/homes?refinement_paths%5B%5D=%2Fhomes" loading="lazy"></iframe>
-
-    <h2>Los Angeles, California 🌊</h2>
-    <iframe src="https://www.airbnb.com/s/Los-Angeles--CA--United-States/homes?refinement_paths%5B%5D=%2Fhomes" loading="lazy"></iframe>
-
-    <h2>San Francisco, California 🌊</h2>
-    <iframe src="https://www.airbnb.com/s/San-Francisco--CA--United-States/homes?refinement_paths%5B%5D=%2Fhomes" loading="lazy"></iframe>
-
-  </section>
+  </div>
 
   <footer>
-    © 2025 Las Palmas | Real-time Airbnb listings embedded by Carlos 👨🏽‍💻
+    © 2025 Las Palmas | Designed by Carlos 👨🏽‍💻 | Powered by Airbnb
   </footer>
 
 </body>
 </html>
+
 
 
 
