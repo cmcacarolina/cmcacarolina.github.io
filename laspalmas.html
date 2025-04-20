@@ -1,161 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Las Palmas | Real Estate Rentals</title>
+  <title>Las Palmas | Featured Listings</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
+      background-color: #f5fdfb;
       margin: 0;
       padding: 0;
-      background-color: #f0f8f5;
+      color: #2d4747;
     }
 
     header {
-      background-color: #1f4037;
+      background-color: #1c6b5c;
       color: white;
+      padding: 40px 20px;
       text-align: center;
-      padding: 30px 0;
     }
 
-    h1 {
-      font-size: 2.5rem;
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    .tagline {
+      font-size: 18px;
+      margin-top: 8px;
     }
 
     .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       padding: 40px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
+      max-width: 1200px;
+      margin: auto;
+      gap: 30px;
     }
 
-    .property-card {
+    .card {
       background-color: white;
       border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 40px;
+      width: 300px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    .property-card h2 {
-      margin-top: 0;
-    }
-
-    .slider {
-      position: relative;
-      width: 100%;
-      max-width: 720px;
-      height: 480px;
       overflow: hidden;
-      border-radius: 10px;
-      margin: 20px 0;
+      text-align: center;
     }
 
-    .slider img {
-      position: absolute;
+    .card img {
       width: 100%;
-      height: 100%;
+      height: 200px;
       object-fit: cover;
-      opacity: 0;
-      transition: opacity 1s ease-in-out;
     }
 
-    .slider img.active {
-      opacity: 1;
+    .card h3 {
+      margin: 15px 0 5px;
     }
 
-    .property-image {
-      width: 100%;
-      height: 480px;
-      object-fit: cover;
-      border-radius: 10px;
-      margin: 20px 0;
+    .card p {
+      padding: 0 15px;
+      font-size: 14px;
+      color: #555;
     }
 
     .btn {
       display: inline-block;
+      margin: 10px;
       padding: 10px 20px;
-      margin-top: 10px;
-      background-color: #2d6a4f;
+      background-color: #1c6b5c;
       color: white;
+      border: none;
+      border-radius: 6px;
       text-decoration: none;
-      border-radius: 5px;
       font-weight: bold;
-      transition: background 0.3s ease;
+      transition: background-color 0.3s;
     }
 
     .btn:hover {
-      background-color: #40916c;
+      background-color: #155448;
     }
 
     footer {
       text-align: center;
+      background-color: #e0f6f0;
       padding: 20px;
-      color: #777;
-      background-color: #f0f8f5;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Las Palmas 🌴</h1>
-  <p>Browse dream homes in Puerto Rico, Florida & California</p>
-</header>
+  <header>
+    <h1>Las Palmas 🌴</h1>
+    <div class="tagline">Browse dream homes in Puerto Rico & California</div>
+  </header>
 
-<div class="container">
+  <div class="container">
 
-  <!-- RIO GRANDE -->
-  <div class="property-card">
-    <h2>Río Grande, Puerto Rico 🌴</h2>
-    <div class="slider">
-      <img src="images/riogrande2.avif" class="active" alt="Río Grande 1">
-      <img src="images/riogrande3.avif" alt="Río Grande 2">
-      <img src="images/riogrande4.avif" alt="Río Grande 3">
-      <img src="images/riogrande5.webp" alt="Río Grande 4">
-      <img src="images/riogrande6.avif" alt="Río Grande 5">
-      <img src="images/riogrande7.avif" alt="Río Grande 6">
+    <!-- RIO GRANDE -->
+    <div class="card">
+      <img src="images/riogrande.jpeg" alt="Rio Grande">
+      <h3>Río Grande, PR</h3>
+      <p>Entire mansion at St. Regis Bahia Beach — 6BR luxury oasis for 12 guests.</p>
+      <a href="https://www.airbnb.com/rooms/49754606" class="btn" target="_blank">Book Now</a>
+      <a href="riogrande-gallery.html" class="btn" target="_blank">View Gallery</a>
     </div>
-    <p>Entire mansion at St. Regis Bahia Beach. 6BR/7BA, sleeps 12. Beachfront luxury with private pool and palm-lined views.</p>
-    <a href="https://www.airbnb.com/rooms/49754606" target="_blank" class="btn">Book on Airbnb</a>
+
+    <!-- ISABELA -->
+    <div class="card">
+      <img src="images/isabela.webp" alt="Isabela">
+      <h3>Isabela, PR</h3>
+      <p>Oceanview villa with infinity pool overlooking golf course — 4BR for 8 guests.</p>
+      <a href="https://www.airbnb.com/rooms/40167748" class="btn" target="_blank">Book Now</a>
+    </div>
+
+    <!-- MALIBU -->
+    <div class="card">
+      <img src="images/malibu.jpeg" alt="Malibu">
+      <h3>Malibu, CA</h3>
+      <p>Mid-century modern home with ocean views — 4BR retreat for 8 guests.</p>
+      <a href="https://www.airbnb.com/rooms/34577812" class="btn" target="_blank">Book Now</a>
+    </div>
+
   </div>
 
-  <!-- ISABELA -->
-  <div class="property-card">
-    <h2>Isabela, Puerto Rico 🌅</h2>
-    <img src="images/isabela.webp" alt="Isabela" class="property-image">
-    <p>Isabela Retreat overlooking Golf Course & Ocean. 4BR/4BA, sleeps 8. Oceanview villa with rooftop deck, pool, and tropical paradise vibes.</p>
-    <a href="https://www.airbnb.com/rooms/40167748" target="_blank" class="btn">Book on Airbnb</a>
-  </div>
-
-  <!-- MALIBU -->
-  <div class="property-card">
-    <h2>Malibu, California 🌊</h2>
-    <img src="images/malibu.jpeg" alt="Malibu" class="property-image">
-    <p>Mid-Century Modern Luxury with Ocean Views. 4BR/3.5BA, sleeps 8. Stunning hilltop retreat with modern architecture and private gardens.</p>
-    <a href="https://www.airbnb.com/rooms/34577812" target="_blank" class="btn">Book on Airbnb</a>
-  </div>
-
-</div>
-
-<footer>
-  © 2025 Las Palmas | Designed with sunshine by Carlos ☀️
-</footer>
-
-<script>
-  const images = document.querySelectorAll('.slider img');
-  let current = 0;
-
-  function cycleImages() {
-    images[current].classList.remove('active');
-    current = (current + 1) % images.length;
-    images[current].classList.add('active');
-  }
-
-  setInterval(cycleImages, 3000);
-</script>
+  <footer>
+    © 2025 Las Palmas | Curated by Carlos 🏖️ | Built for the luxe life 🌅
+  </footer>
 
 </body>
 </html>
+
 
 
 
