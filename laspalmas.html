@@ -1,133 +1,98 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Las Palmas | Featured Listings</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Las Palmas | Coastal Homes</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f5fdfb;
+      background-color: #f0f7f4;
       margin: 0;
-      padding: 0;
-      color: #2d4747;
+      padding: 20px;
     }
-
-    header {
-      background-color: #1c6b5c;
-      color: white;
-      padding: 40px 20px;
+    h1 {
       text-align: center;
+      color: #155e43;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 40px;
-    }
-
-    .tagline {
-      font-size: 18px;
-      margin-top: 8px;
-    }
-
-    .container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
-      gap: 30px;
-    }
-
     .card {
-      background-color: white;
+      background: white;
       border-radius: 10px;
-      width: 300px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      overflow: hidden;
-      text-align: center;
+      margin: 20px auto;
+      padding: 16px;
+      max-width: 700px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
-
     .card img {
       width: 100%;
-      height: 200px;
-      object-fit: cover;
+      height: auto;
+      border-radius: 10px;
     }
-
-    .card h3 {
-      margin: 15px 0 5px;
+    .card h2 {
+      margin-top: 10px;
+      color: #155e43;
     }
-
     .card p {
-      padding: 0 15px;
-      font-size: 14px;
-      color: #555;
+      font-size: 15px;
     }
-
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      background-color: #1c6b5c;
-      color: white;
-      border: none;
-      border-radius: 6px;
+    .btns {
+      margin-top: 10px;
+    }
+    .btns a {
       text-decoration: none;
-      font-weight: bold;
-      transition: background-color 0.3s;
+      background: #2a9d8f;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin-right: 10px;
     }
-
-    .btn:hover {
-      background-color: #155448;
-    }
-
-    footer {
+    .footer {
       text-align: center;
-      background-color: #e0f6f0;
-      padding: 20px;
-      font-size: 14px;
+      font-size: 13px;
+      color: #888;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+  <h1>Las Palmas 🌴</h1>
+  <p style="text-align:center;">Luxury homes in Puerto Rico, Florida, and California</p>
 
-  <header>
-    <h1>Las Palmas 🌴</h1>
-    <div class="tagline">Browse dream homes in Puerto Rico & California</div>
-  </header>
-
-  <div class="container">
-
-    <!-- RIO GRANDE -->
-    <div class="card">
-      <img src="images/riogrande.jpeg" alt="Rio Grande">
-      <h3>Río Grande, PR</h3>
-      <p>Entire mansion at St. Regis Bahia Beach — 6BR luxury oasis for 12 guests.</p>
-      <a href="https://www.airbnb.com/rooms/49754606" class="btn" target="_blank">Book Now</a>
-      <a href="riogrande-gallery.html" class="btn" target="_blank">View Gallery</a>
+  <!-- Río Grande -->
+  <div class="card">
+    <img src="images/riogrande.jpeg" alt="Río Grande">
+    <h2>Río Grande, PR</h2>
+    <p>Entire mansion at St. Regis Bahia Beach Resort. 12 guests · 6 bedrooms · 7 beds · 6 baths</p>
+    <div class="btns">
+      <a href="https://www.airbnb.com/rooms/49754606" target="_blank">Book Now</a>
+      <a href="riogrande-gallery.html">View Gallery</a>
     </div>
-
-    <!-- ISABELA -->
-    <div class="card">
-      <img src="images/isabela.webp" alt="Isabela">
-      <h3>Isabela, PR</h3>
-      <p>Oceanview villa with infinity pool overlooking golf course — 4BR for 8 guests.</p>
-      <a href="https://www.airbnb.com/rooms/40167748" class="btn" target="_blank">Book Now</a>
-    </div>
-
-    <!-- MALIBU -->
-    <div class="card">
-      <img src="images/malibu.jpeg" alt="Malibu">
-      <h3>Malibu, CA</h3>
-      <p>Mid-century modern home with ocean views — 4BR retreat for 8 guests.</p>
-      <a href="https://www.airbnb.com/rooms/34577812" class="btn" target="_blank">Book Now</a>
-    </div>
-
   </div>
 
-  <footer>
-    © 2025 Las Palmas | Curated by Carlos 🏖️ | Built for the luxe life 🌅
-  </footer>
+  <!-- Isabela -->
+  <div class="card">
+    <img src="images/isabela.webp" alt="Isabela">
+    <h2>Isabela, PR</h2>
+    <p>Oceanview retreat in Isabela. 8 guests · 4 bedrooms · 5 beds · 4 baths</p>
+    <div class="btns">
+      <a href="https://www.airbnb.com/rooms/40167748" target="_blank">Book Now</a>
+      <a href="isabela-gallery.html">View Gallery</a>
+    </div>
+  </div>
 
+  <!-- Malibu -->
+  <div class="card">
+    <img src="images/malibu.jpeg" alt="Malibu">
+    <h2>Malibu, CA</h2>
+    <p>Mid-century modern home with ocean views. 8 guests · 4 bedrooms · 5 beds · 3.5 baths</p>
+    <div class="btns">
+      <a href="https://www.airbnb.com/rooms/34577812" target="_blank">Book Now</a>
+      <a href="malibu-gallery.html">View Gallery</a>
+    </div>
+  </div>
+
+  <div class="footer">© 2025 Las Palmas | Designed with sunshine by Carlos</div>
 </body>
 </html>
 
