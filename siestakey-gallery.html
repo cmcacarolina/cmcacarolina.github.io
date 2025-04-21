@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siesta Key Gallery | Las Palmas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0fdf4;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background-color: #065f46;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    .gallery-container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .gallery-title {
+      text-align: center;
+      color: #065f46;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      height: 200px;
+    }
+    .back-link {
+      display: block;
+      text-align: center;
+      margin: 30px auto;
+      padding: 10px 20px;
+      background-color: #065f46;
+      color: white;
+      text-decoration: none;
+      width: fit-content;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Siesta Key Gallery</h1>
+    <p>Tropical Oasis | 7BR / 6BA · Sleeps 16+</p>
+  </div>
 
+  <div class="gallery-container">
+    <div class="gallery-grid">
+      <img src="images/siestakey2.avif" alt="Siesta Key 1" />
+      <img src="images/siestakey3.avif" alt="Siesta Key 2" />
+      <img src="images/siestakey4.avif" alt="Siesta Key 3" />
+      <img src="images/siestakey5.avif" alt="Siesta Key 4" />
+      <img src="images/siestakey6.avif" alt="Siesta Key 5" />
+      <img src="images/siestakey7.avif" alt="Siesta Key 6" />
+    </div>
+    <a href="laspalmas.html" class="back-link">← Back to Listings</a>
+  </div>
+</body>
+</html>
