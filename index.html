@@ -26,20 +26,17 @@
       margin-bottom: 30px;
     }
 
-    a.button {
-      display: inline-block;
-      padding: 14px 28px;
-      background-color: #228b7f;
-      color: white;
-      font-size: 18px;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
+    .image-button img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      transition: transform 0.2s ease;
     }
 
-    a.button:hover {
-      background-color: #1a6b5c;
+    .image-button img:hover {
+      transform: scale(1.02);
     }
   </style>
 </head>
@@ -48,9 +45,17 @@
   <div class="container">
     <h1>Hello Welcome 🖐🏽</h1>
     <p>This is cmcacarolina official website.</p>
-    <a href="laspalmas.html" class="button">Enter Las Palmas Site 🏡</a>
+
+    <!-- 🌴 Las Palmas Image Button -->
+    <div class="image-button">
+      <a href="laspalmas.html">
+        <img src="images/las-palmas-button.png" alt="Enter to Las Palmas">
+      </a>
+    </div>
+
   </div>
 
 </body>
 </html>
+
 
