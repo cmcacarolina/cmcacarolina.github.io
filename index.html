@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Welcome | cmcacarolina</title>
   <style>
     body {
@@ -23,7 +24,7 @@
 
     p {
       font-size: 18px;
-      margin-bottom: 30px;
+      margin-bottom: 40px;
     }
 
     .image-button img {
@@ -38,6 +39,13 @@
     .image-button img:hover {
       transform: scale(1.02);
     }
+
+    .button-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
   </style>
 </head>
 <body>
@@ -46,16 +54,26 @@
     <h1>Hello Welcome 🖐🏽</h1>
     <p>This is cmcacarolina official website.</p>
 
-    <!-- 🌴 Las Palmas Image Button -->
-    <div class="image-button">
-      <a href="laspalmas.html">
-        <img src="images/las-palmas-button.png" alt="Enter to Las Palmas">
-      </a>
+    <div class="button-container">
+      <!-- 🌴 Las Palmas Image Button -->
+      <div class="image-button">
+        <a href="laspalmas.html">
+          <img src="images/las-palmas-button.png" alt="Enter to Las Palmas">
+        </a>
+      </div>
+
+      <!-- 🍴 Macro Tracker Image Button -->
+      <div class="image-button">
+        <a href="tracker.html">
+          <img src="images/macrotracker.png" alt="Fresh Meals Macro Tracker">
+        </a>
+      </div>
     </div>
 
   </div>
 
 </body>
 </html>
+
 
 
