@@ -6,10 +6,11 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f2f9f7;
+      background: url('images/ComputerBuildBackground.jpg') no-repeat center center fixed;
+      background-size: cover;
       margin: 0;
       padding: 0;
-      color: #2c3e50;
+      color: #ffffff;
       text-align: center;
     }
 
@@ -24,14 +25,23 @@
 
     p {
       font-size: 18px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+    }
+
+    .profile-picture {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+      margin-bottom: 20px;
     }
 
     .image-button img {
       width: 100%;
-      max-width: 600px;
+      max-width: 300px;
       border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
       cursor: pointer;
       transition: transform 0.2s ease;
     }
@@ -40,33 +50,72 @@
       transform: scale(1.02);
     }
 
+    .text-button {
+      background-color: #0077b6;
+      color: #fff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 20px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .text-button:hover {
+      background-color: #005f87;
+    }
+
     .button-container {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 40px;
+      gap: 30px;
+    }
+
+    .contact-links a {
+      color: #ffffff;
+      font-size: 22px;
+      margin: 0 10px;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
   <div class="container">
-    <h1>Hello Welcome 🖐🏽</h1>
+    <img src="images/CarlosM.jpg" alt="Your Photo" class="profile-picture">
+
+    <h1>Hello, Welcome 🖐🏽</h1>
     <p>This is cmcacarolina official website.</p>
 
     <div class="button-container">
-      <!-- 🌴 Las Palmas Image Button -->
+      <!-- 🌴 Las Palmas Image Button (smaller) -->
       <div class="image-button">
         <a href="laspalmas.html">
           <img src="images/las-palmas-button.png" alt="Enter to Las Palmas">
         </a>
       </div>
+
+      <!-- ✨ About Me Text Button -->
+      <a href="about.html" class="text-button">✨ About Me</a>
+    </div>
+
+    <br><br>
+
+    <!-- 📩 Contact Links -->
+    <div class="contact-links">
+      <a href="mailto:cmcacarolinapr@gmail.com">✉️ Email</a> |
+      <a href="https://linkedin.com/in/cmcacarolinapr/" target="_blank">🔗 LinkedIn</a> |
     </div>
 
   </div>
 
 </body>
 </html>
+
 
 
 
