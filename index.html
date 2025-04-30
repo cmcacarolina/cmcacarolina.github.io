@@ -37,17 +37,19 @@
       margin-bottom: 20px;
     }
 
-    .image-button img {
+    .las-palmas-hero img {
       width: 100%;
-      max-width: 300px;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-      cursor: pointer;
-      transition: transform 0.2s ease;
+      max-width: 500px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(255, 180, 80, 0.3);
+      margin: 40px auto;
+      display: block;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .image-button img:hover {
-      transform: scale(1.02);
+    .las-palmas-hero img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 40px rgba(255, 215, 100, 0.6);
     }
 
     .text-button {
@@ -92,12 +94,10 @@
     <p>This is cmcacarolina official website.</p>
 
     <div class="button-container">
-      <!-- 🌴 Las Palmas Image Button (smaller) -->
-      <div class="image-button">
-        <a href="laspalmas.html">
-          <img src="images/las-palmas-button.png" alt="Enter to Las Palmas">
-        </a>
-      </div>
+      <!-- 🌴 Las Palmas Magazine Hero Cover -->
+      <a href="laspalmas.html" class="las-palmas-hero">
+        <img src="images/laspalmas-cover1.jpg" alt="Las Palmas Island Escapes">
+      </a>
 
       <!-- ✨ About Me Text Button -->
       <a href="about.html" class="text-button">✨ About Me</a>
@@ -116,6 +116,7 @@
 
 </body>
 </html>
+
 
 
 
