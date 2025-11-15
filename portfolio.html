@@ -251,6 +251,38 @@
   display: block;
 }
 
+/* Two-image preview layout */
+.project-preview-double {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.project-preview-double img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+}
+
+/* Make it single-column on mobile */
+@media (max-width: 700px) {
+    .project-preview-double {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-preview-double {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 25px;   /* ← adds spacing below Project link */
+    margin-bottom: 20px;
+}
+
+
+
   </style>
 </head>
 <body>
@@ -275,7 +307,7 @@
         <span class="project-count">
           (<span id="project-count-completed"
                  class="project-count-number"
-                 data-target="5">0</span>
+                 data-target="6">0</span>
           /
           <span id="project-count-goal"
                  class="project-count-number"
@@ -420,6 +452,41 @@
     <img src="images/KingKrownsVideoGame.png" alt="Derby King's Crowns website" />    
   </div>
 </div>
+
+<!-- PROJECT 6 — PUERTO MAR POOL BUILDERS -->
+<div class="project-card project-wide">
+    
+    <h3>Puerto Mar Pool Builders 🏝️ – Luxury Pool Construction</h3>
+
+    <p>
+        A premium website concept for a Caribbean-inspired pool construction brand. Features a cinematic 
+        video hero, luxury turquoise theme, animated navbar, and a full “Design Your Custom Pool Plan” 
+        workflow section with engineering-style cards.
+    </p>
+
+    <ul class="tech-used">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS (Video Randomizer)</li>
+        <li>Brand & UI/UX Design</li>
+    </ul>
+    🌐 <strong>Project link:</strong> Coming Soon
+
+    <!-- FULL WEBSITE PREVIEW IMAGES -->
+    <div class="project-preview-double">
+        <img src="images/PuertoMarWeb1.png" alt="Puerto Mar Website Homepage">
+        <img src="images/PuertoMarWeb2.png" alt="Puerto Mar Custom Plan Section">
+    </div>
+    ️
+    
+</div>
+
+<script>
+function openPM() {
+    window.open('PortfolioProjects/PuertoMarPoolBuilders/index.html', '_blank');
+}
+</script>
+
 
 
 
